@@ -1,0 +1,25 @@
+@import url('./header.scss');
+
+:root {
+    --cinza: #B4B4B4;
+    --branco: #DDDDDD;
+    --preto: #3E3E3E;
+    --dourado: #FFAD48;
+}
+
+body {
+    background-color: var(--cinza);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}

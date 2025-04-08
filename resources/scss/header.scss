@@ -1,0 +1,27 @@
+#headerPrincipal {
+    & > .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        ul {
+            display: flex;
+            align-items: center;
+            
+            li {
+                a {
+                    display: block;
+                    padding: 10px 30px;
+                    transition: .3s;
+                    color: var(--preto);
+
+                    &:hover {
+                        transition: .3s;
+                        background-color: var(--dourado);
+                        color: var(--branco);
+                    }
+                }
+            }
+        }
+    }
+}
