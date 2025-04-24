@@ -1,0 +1,51 @@
+#main_banner {
+    min-height: 325px;
+    padding: 37px 0;
+    
+    & > .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+
+        min-height: 325px;
+
+        #main_banner_title {
+            font-weight: 900;
+            font-size: 40px;
+            max-width: 833px;
+
+            strong {
+                color: var(--dourado);
+            }
+
+            strong:last-child {
+                color: black;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            max-width: 1192px;
+        }
+
+        a {
+            border-radius: 30px;
+            text-align: center;
+            font-weight: 700;
+            width: 284px;
+            padding: 15px 30px;
+            background-color: var(--dourado);
+            color: white;
+            box-shadow: 2px 0px 10px rgba(0, 0, 0, .5);
+            text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+            transition: .3s;
+
+            &:hover {
+                transition: .3s;
+                scale: 1.1;
+            }
+        }
+    }
+}

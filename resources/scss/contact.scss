@@ -1,0 +1,92 @@
+#contact {
+    padding: 200px 0;
+    background-color: var(--cinzaClaro);
+
+    & > .container {
+        padding: 70px;
+        background-color: white;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        border-radius: 30px;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+
+        .contact-infos {
+            max-width: 580px;
+
+            .contact-infos-title {
+                display: flex;
+                gap: 20px;
+
+                h2 {
+                    color: var(--preto);
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-bottom: 42px;
+                }
+            }
+
+            .contact-infos-main {
+                h3 {
+                    font-size: 32px;
+                    color: var(--preto);
+                    margin-bottom: 12px;
+                }
+            }
+        }
+
+        .contact-form {
+            width: calc(100% - 530px);
+
+            form {
+                width: 100%;
+
+                .form-group {
+                    width: 100%;
+                    margin-bottom: 10px;
+
+                    & > input, & > textarea {
+                        width: 100%;
+                        padding: 15px 10px;
+
+                        border: 1px solid rgba(0, 0, 0, .4);
+                        border-radius: 10px;
+                        
+                        transition: .3s;
+
+                        &:hover {
+                            transition: .3s;
+                            scale: 1.05;
+                        }
+                    }
+
+                    textarea {
+                        height: 120px;
+                        resize: none;
+                    }
+
+                }
+
+                button {
+                    width: 100%;
+                    padding: 15px 0;
+                    background-color: var(--dourado);
+                    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+                    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+                    color: white;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    border: none;
+                    border-radius: 30px;
+                    transition: .3s;
+
+                    &:hover {
+                        transition: .3s;
+                        scale: 1.05;
+                    }
+                }
+            }
+        }
+    }
+}

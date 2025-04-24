@@ -1,15 +1,20 @@
-<header id="headerPrincipal">
+<header id="headerPrincipal" role="banner">
     <div class="container">
-        <a href="/">
-            <img width="200" src="{{ asset('img/svg/logo.svg') }}" alt="Logo escrito 'Amazon Prime'">
+        <a href="/" aria-label="Página inicial">
+            <img
+                width="200"
+                src="{{ asset('img/svg/logo.svg') }}"
+                alt="Amazon Prime - logo" />
         </a>
 
-        <ul>
-            <li><a href="#">Novidades</a></li>
-            <li><a href="#">Diferenciais</a></li>
-            <li><a href="#">Depoimentos</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="#novidades">Novidades</a></li>
+                <li><a href="#differentials">Diferenciais</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </div>
 </header>

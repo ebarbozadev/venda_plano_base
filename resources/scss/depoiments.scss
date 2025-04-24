@@ -1,0 +1,86 @@
+#depoimentos {
+    margin: 200px 0;
+
+    > .container {
+        .depoimentos-title {
+            margin: 0 auto;
+            max-width: 890px;
+            text-align: center;
+
+            h2 {
+                font-size: 2.5rem;
+                font-weight: normal;
+
+                strong {
+                    color: var(--dourado);
+                    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+                }
+            }
+
+            p {
+                font-size: 2.5rem;
+
+                strong {
+                    color: var(--dourado);
+                    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+                }
+            }
+        }
+
+        .depoimentos-cards {
+            margin: 65px auto 0;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: space-between;
+
+            .depoimento-card {
+                flex: 1 1 400px;
+                display: flex;
+                align-items: center;
+                gap: 25px;
+                padding: 25px;
+                background-color: var(--cinzaClaro);
+                border-radius: 30px;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                img {
+                    border-radius: 50%;
+                }
+
+                .depoimento-conteudo {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    header {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+                        h3 {
+                            font-size: 1.1rem;
+                            margin: 0;
+                        }
+
+                        .cargo {
+                            font-size: 0.9rem;
+                            color: #666;
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+
+                    .descricao {
+                        font-size: 1rem;
+                        line-height: 1.5;
+                        color: #333;
+                    }
+                }
+            }
+        }
+    }
+}

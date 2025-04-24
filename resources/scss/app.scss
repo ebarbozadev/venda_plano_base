@@ -1,25 +1,55 @@
 @import url('./header.scss');
+@import url('./main_banner.scss');
+@import url('./differentials.scss');
+@import url('./differentials_section.scss');
+@import url('./depoiments.scss');
+@import url('./plans.scss');
+@import url('./contact.scss');
+@import url('./footer.scss');
 
 :root {
-    --cinza: #B4B4B4;
-    --branco: #DDDDDD;
+    --cinza: #d4d2d2;
+    --cinzaClaro: #F3F3F3;
+    --branco: #f0f0f0;
     --preto: #3E3E3E;
+    --azul: #42A2C7;
     --dourado: #FFAD48;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', serif;
+    cursor: context-menu;
+}
+
 body {
-    background-color: var(--cinza);
+    background-color: var(--branco);
 }
 
 ul {
     list-style: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 a {
     text-decoration: none;
+    cursor: pointer;
+    
+    strong {
+        cursor: pointer;
+    }
+}
+
+input, textarea {
+    cursor: text;
 }
 
 .container {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
 }

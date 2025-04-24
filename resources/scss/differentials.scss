@@ -1,0 +1,72 @@
+.diferenciais {
+    background: linear-gradient(to bottom, white 70%, var(--azul) 30%);
+    padding: 4rem 1rem;
+
+    & > .container {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .diferenciais-title-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            margin-bottom: 32px;
+
+            h3 {
+                text-align: center;
+                font-weight: 400;
+                font-size: 24px;
+            }
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+            text-align: center;
+            transition: .3s;
+        
+            img {
+                width: 80px;
+                margin-bottom: 1rem;
+            }
+    
+            h3 {
+                font-size: 1.1rem;
+                margin-bottom: 0.5rem;
+            }
+    
+            p {
+                font-size: 0.95rem;
+                color: #444;
+            }
+
+            &:hover {
+                transition: .3s;
+                scale: 1.1;
+            }
+        }
+
+        .card.destaque {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .card.destaque {
+        padding: 1.5rem;
+    }
+}

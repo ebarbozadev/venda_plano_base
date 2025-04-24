@@ -1,5 +1,5 @@
-#headerPrincipal {
-    padding: 37px 0;
+#footer {
+    padding: 15px 0;
     & > .container {
         display: flex;
         justify-content: space-between;
@@ -25,5 +25,9 @@
                 }
             }
         }
+    }
+
+    .footer-copy {
+        text-align: center;
     }
 }
